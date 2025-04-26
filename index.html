@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Healthcare System Home</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      text-align: center;
+      background-color: #e8f0fe;
+    }
+    h1 {
+      margin-top: 20px;
+    }
+    .button-container {
+      margin-top: 30px;
+    }
+    .button-container a {
+      display: inline-block;
+      margin: 10px;
+      padding: 15px 25px;
+      background-color: #4CAF50;
+      color: white;
+      text-decoration: none;
+      border-radius: 8px;
+    }
+    .scroll-container {
+      margin: 20px auto;
+      overflow-x: scroll;
+      white-space: nowrap;
+      width: 90%;
+      background: #f2f2f2;
+      padding: 10px;
+      border-radius: 10px;
+    }
+    .scroll-container div {
+      display: inline-block;
+      background-color: #90caf9;
+      padding: 20px;
+      margin-right: 10px;
+      border-radius: 8px;
+      font-weight: bold;
+    }
+    #chatbot {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Welcome to Healthcare System</h1>
+
+  <div class="button-container">
+    <a href="pages/login/patient.html">Patient Login</a>
+    <a href="pages/login/doctor.html">Doctor Login</a>
+    <a href="pages/login/admin.html">Admin Login</a><br>
+    <a href="pages/register/patientRegister.html">Patient Register</a>
+    <a href="pages/register/doctorRegister.html">Doctor Register</a>
+    <a href="pages/register/adminRegister.html">Admin Register</a><br>
+    <a href="pages/pharmacy/pharmacy.html">Go to Pharmacy</a>
+  </div>
+
+  <h2>Departments</h2>
+  <div class="scroll-container">
+    <div>Cardiology</div>
+    <div>Neurology</div>
+    <div>Orthopedics</div>
+    <div>Dermatology</div>
+    <div>Pediatrics</div>
+    <div>Psychiatry</div>
+    <div>Oncology</div>
+  </div>
+
+  <h2>Our Doctors</h2>
+  <div class="scroll-container">
+    <div>Dr. John Doe</div>
+    <div>Dr. Jane Smith</div>
+    <div>Dr. Albert Newton</div>
+    <div>Dr. Clara Oswald</div>
+    <div>Dr. Sam Carter</div>
+  </div>
+
+  <div id="chatbot">
+    <button onclick="alert('Hello! How can I help you today?')">Chat with us</button>
+  </div>
+
+</body>
+</html>
